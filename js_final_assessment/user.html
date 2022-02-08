@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+     <div class="nav">
+      <h2><a href="index.html">Home</a></h2> 
+     </div>
+
+    </nav>
+    <!--<div class="modal"></div> -->
+    <div class="modal">
+        <h1 id="userAccount">Welcome </h1>
+        <h2 id="address"></h2>
+        <h2 id="username"></h2>
+    </div>
+<style>
+
+.nav{
+    height:5rem;
+
+}
+
+.details{
+    width:80%;
+    background-color:rgb(238, 201, 132);
+    background-image: url(images/hero1.jpg);
+    color:white;
+    margin: 6rem auto;
+    padding:2rem;
+    font-style: italic;
+    font-size: 32px;
+}
+
+#logout{
+  padding:1rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  color:#fff;
+  background-color: rgba(230, 125, 34, 0.911);
+  cursor:pointer;
+  border:2px solid black;
+}
+.list{
+    padding:1rem;
+    margin:0.5rem;
+}    
+</style>   
+
+<Script>
+
+// Displaying user details
+
+
+function userAccount()
+   {
+       let cartData='';
+
+       cartData += `
+       <div class="details">
+       <div class="list">Welcome ${JSON.parse(localStorage.getItem("personName"))}!</div>
+       <div class="list">${JSON.parse(localStorage.getItem("add"))}</div>   
+       <div class="list">${JSON.parse(localStorage.getItem("username"))}</h3></div>
+       <div ><button id="logout" onclick="Logout();"> Logout </button></div>
+       </div>`
+    
+    document.querySelector('.modal').innerHTML=cartData;
+   }
+
+    userAccount();
+
+function Logout()
+{
+  localStorage.removeItem('username');
+  localStorage.removeItem('email');
+  window.location.href="./singin.html"
+}
+
+console.log()
+
+</Script>
+
+</body>
+
+
+</html>

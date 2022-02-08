@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Food App</title>
+    <link href="./style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <body>
+        <!--Hero Section-->
+<header class="header">
+  <span class="logo">🍲<em> Recipes</em></span>
+  <nav >
+      <div class="rightNav">
+        <ul class="nav-link">
+          <li><a href="#restaurents" class="nav-link" >Restaurents</a></li>
+          <li><a href="#testimonial" class="nav-link">About Us</a></li> 
+          <li><a href="cart.html" class="nav-link">My Cart</a></li>
+          <li> <a href="user.html" class="nav-link">My Account</a></li>
+          
+        </ul>
+      </div>
+  </nav> 
+  
+
+</header>
+  <section class="section-hero">
+    <div class="hero">
+      <div class="hero-image-box">
+        <img src="images/hero.png " class="hero-image" alt="image"/>
+      </div>
+
+      <div class="box">
+        <h1 class="primary">A healthy meal delivered to your door, every single day</h1>
+        <p class="description"> The smart 365-days-per-year food subscription that will make you
+        eat healthy again. Tailored to your personal tastes and
+        nutritional needs.
+        </p>
+
+
+     <a href="#feature" class="btn btn-second">Learn More &darr;</a>
+    </div>
+  </div>
+                      <!--Creating Cards-->
+ </section>
+    <div class="recipiesCard shop-items" id="restaurents"> </div>
+    <div id="dish" class="shop-item" ></div>
+
+    <div id="second" class="shop-item"> </div>
+  
+    <div class="result ">
+      <a class="result btn1" id="rest1"> Menu &rarr;</a>
+      <a class="result btn1" id="rest2" > Menu &rarr;</a>
+      <a class="result btn1 hidden" id="rest"> &larr; Back</a>
+    </div>
+ 
+
+ <div>
+  <h1 id="userAccount"></h1>
+  <h2 id="address"></h2>
+  <h2 id="username"></h2>
+</div>
+
+     <!-- Testimonial Section-->
+  <section class="section-testimonials" id="testimonial">
+    <span class="subheading">Testimonials</span>
+    <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+
+    <div class="testimonials">
+      <figure class="testimonial1">
+        <img
+          class="testimonial-img"
+          alt="Photo of customer Dave Bryson"
+           src="images/dave.jpg"
+        />
+        <blockquote class="testimonial-text">
+              Inexpensive, healthy and great-tasting meals, without even
+              having to order manually! It feels truly magical.
+        </blockquote>
+        <p class="testimonial-name">&mdash; Dave Bryson</p>
+          
+      </figure>
+
+      <figure class="testimonial2">
+        <img
+          class="testimonial-img"
+          alt="Photo of customer Ben Hadley"
+          src="images/ben.jpg"
+        />
+        <blockquote class="testimonial-text">
+          The AI algorithm is crazy good, it chooses the right meals for
+          me every time. It's amazing not to worry about food anymore!
+        </blockquote>
+          <p class="testimonial-name">&mdash; Ben Hadley</p>
+      </figure>
+
+      <figure class="testimonial3">
+        <img
+          class="testimonial-img"
+          alt="Photo of customer Steve Miller"
+          src="images/steve.jpg"
+        />
+        <blockquote class="testimonial-text">
+          Omnifood is a life saver! I just started a company, so there's
+          no time for cooking. I couldn't live without my daily meals now!
+        </blockquote>
+        <p class="testimonial-name">&mdash; Steve Miller</p>
+      </figure>
+
+      <figure class="testimonial4">
+        <img
+          class="testimonial-img"
+          alt="Photo of customer Hannah Smith"
+          src="images/hannah.jpg"
+        />
+        <blockquote class="testimonial-text">
+          I got Omnifood for the whole family, and it frees up so much
+          time! Plus, everything is organic and vegan and without plastic.
+        </blockquote>
+        <p class="testimonial-name">&mdash; Hannah Smith</p>
+      </figure>
+        </div>
+ </section>
+                   
+  <div class="container" id="feature">
+    <div class="feature1">
+      <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+      <p class="feature-title">Never cook again!</p>
+      <p class="feature-text">
+        Our subscriptions cover 365 days per year, even including major
+        holidays.
+      </p>
+    </div>
+    <div class="feature2">
+      <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+      <p class="feature-title">Local and organic</p>
+      <p class="feature-text">
+        Our cooks only use local, fresh, and organic products to prepare
+        your meals.
+      </p>
+    </div>
+    <div class="feature3">
+      <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+      <p class="feature-title">No waste</p>
+      <p class="feature-text">
+        All our partners only use reusable containers to package all your
+        meals.
+      </p>
+    </div>
+    <div class="feature4">
+      <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+      <p class="feature-title">Pause anytime</p>
+      <p class="feature-text">
+        Going on vacation? Just pause your subscription, and we refund
+         unused days.
+      </p>
+    </div>
+  </div>
+  <div class="overlay hidden">
+
+  </div>
+     
+<!--Footer-->
+<footer>
+  Copyright &copy; 2021 by <strong>Recipes</strong>, Inc. All rights reserved.
+</footer>
+
+
+<script src="./script.js"> </script>
+ <script src="./cartItem.js"></script> 
+
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+  ></script>
+</body>
+</html>
